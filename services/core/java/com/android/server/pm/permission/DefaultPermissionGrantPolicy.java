@@ -447,7 +447,7 @@ public final class DefaultPermissionGrantPolicy {
 
         // SetupWizard
         grantPermissionsToSystemPackage(
-                getKnownPackage(PackageManagerInternal.PACKAGE_SETUP_WIZARD, userId), userId,
+                getKnownPackage(PackageManagerInternal.PACKAGE_SETUP_WIZARD, true, userId), userId,
                 PHONE_PERMISSIONS, CONTACTS_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS,
                 CAMERA_PERMISSIONS);
 
