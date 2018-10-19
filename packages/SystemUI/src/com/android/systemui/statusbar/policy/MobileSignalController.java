@@ -383,14 +383,14 @@ public class MobileSignalController extends SignalController<
 
     private int getVolteResId() {
         int resId = 0;
-        int voiceNetTye = getVoiceNetworkType();
-        if ( (mCurrentState.voiceCapable || mCurrentState.videoCapable)
-                &&  mCurrentState.imsRegistered ) {
+        //int voiceNetTye = getVoiceNetworkType();
+        if ((mCurrentState.voiceCapable || mCurrentState.videoCapable)
+                &&  mCurrentState.imsRegistered) {
             resId = R.drawable.ic_volte;
-        }else if ( (mDataNetType == TelephonyManager.NETWORK_TYPE_LTE
+        /*}else if ( (mDataNetType == TelephonyManager.NETWORK_TYPE_LTE
                         || mDataNetType == TelephonyManager.NETWORK_TYPE_LTE_CA)
                     && voiceNetTye  == TelephonyManager.NETWORK_TYPE_UNKNOWN) {
-            resId = R.drawable.ic_volte_no_voice;
+            resId = R.drawable.ic_volte_no_voice;*/
         }
         return resId;
     }
