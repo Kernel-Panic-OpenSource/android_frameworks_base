@@ -1024,11 +1024,11 @@ public class StatusBar extends SystemUI implements DemoMode,
     private void initCoreOverlays(){
         boolean aodAvailable = mContext.getResources().getBoolean(
                     com.android.internal.R.bool.config_dozeAlwaysOnDisplayAvailable);
-        try{
-            mOverlayManager.setEnabled("com.google.android.pixel.setupwizard.overlay.aod",
-                aodAvailable, mLockscreenUserManager.getCurrentUserId());
-        } catch (RemoteException ignored) {
-        }
+        //try{
+        //    mOverlayManager.setEnabled("com.google.android.pixel.setupwizard.overlay.aod",
+        //        aodAvailable, mLockscreenUserManager.getCurrentUserId());
+        //} catch (RemoteException ignored) {
+        //}
         boolean navbarEnabled = NavbarUtils.isEnabled(mContext);
         if (!navbarEnabled) {
             setNavBarInteractionMode(NAV_BAR_MODE_3BUTTON_OVERLAY);
